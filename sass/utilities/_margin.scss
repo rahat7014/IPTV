@@ -1,0 +1,47 @@
+/*--
+    - margin-class
+-------------------------------------------*/
+// margin-class Top
+@include margin-class(mt, 0);
+@include margin-class(mt, 15);
+@include margin-class(mt, 20);
+@include margin-class(mt, 40);
+@include margin-class(mt, 50);
+
+// margin-class Bottom
+@include margin-class(mb, 0);
+@include margin-class(mb, 35);
+@include margin-class(mb, 40);
+
+// margin-class Left
+@include margin-class(ml, 0);
+
+// margin-class Right
+@include margin-class(mr, 0);
+
+// margin-class Left-Right
+// @include margin-class(mx, -15);
+
+// margin-class Top-Bottom
+@include margin-class(my, 50);
+
+// margin-class All
+@include margin-class(m, 0);
+// @include m-auto(m, auto);
+
+// margin-class Top-Bottom Auto
+// @include m-auto(my, auto);
+
+// margin-class Left-Right Auto
+// @include m-auto(mx, auto);
+
+// Responsive margin-class
+// @include margin-rs(mt, md, 0);
+// @include margin-rs(mb, lg, 0);
+
+// Responsive margin-class Auto
+// @include m-auto-rs(mx, md, auto);
+
+.-mx-15 {
+    @include margin(mx, -15);
+}

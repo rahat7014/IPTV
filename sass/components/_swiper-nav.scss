@@ -1,0 +1,43 @@
+.swiper-nav{
+  .swiper-prev,
+  .swiper-next{
+    @include absolute(bottom 0);
+    @include size(30px);
+    font-size: 18px;
+    background: rgba($color: $white, $alpha: 0.25);
+    color: $red;
+    line-height: 30px;
+    border-radius: 50%;
+    margin: 5px;
+    text-align: center;
+    cursor: pointer;
+    @include property;
+
+    &:hover{
+      background: $white; 
+    }
+  }
+
+  .swiper-prev{
+    right: 50%;
+    transform: translateX(-50%);
+  }
+
+  .swiper-next{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tranding-nav {
+  .swiper-prev,
+  .swiper-next {
+    @include absolute(top -55px right 40px);
+    outline: none;
+  }
+
+  .swiper-next{
+    left: auto;
+    right: 0;
+  }
+}

@@ -1,0 +1,42 @@
+/*----------------------------------------*/
+/* Footer Area
+/*----------------------------------------*/
+.footer-widget{
+  @include footer-menu($size: 17px);
+
+  li{
+    a{
+      font-family: $roboto;
+      color: $white;
+
+      &:hover{
+        color: $red;
+      }
+    }
+  }
+}
+
+.footer-menu{
+  li{
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+
+    +li {
+      &::before{
+        content: '';
+        @include absolute(top 8px left 0);
+        @include size(2px, 15px);
+        background: $white;
+      }
+    }
+
+    a{
+      color: $white;
+      
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}

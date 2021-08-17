@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Iptv
+        </title>
+        <!-- simplebar CSS -->
+        <link rel="stylesheet" href="css/vendors/simplebar.css"/>
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="css/vendors/fontawesome.min.css"/>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- swiper CSS-->
+        <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css"/>
+        <!-- flickity CSS-->
+        <link rel="stylesheet" href="css/vendors/flickity.css"/>
+        <link rel="stylesheet" href="assets/vendors/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="css/glider.min.css">
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+        <link rel="stylesheet" href="css/vendors/bootstrap.min.css"/>
+
+        <!-- Style CSS-->
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+    <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+        <!-- Header Area Start-->
+        <header class="bg-theme-color bg-blue">
+            <div class="header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo-->
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <div class="logo-area">
+                                <a href="index.html"><img src="img/logo.png" alt="Logo"/></a>
+                            </div>
+                        </div>
+                        <!-- Logo-->
+                        <!-- Menu Area Start -->
+                        <div class="col-sm-6 col-md-6 d-none">
+                            <a class="mobile-menu" href="#menu">
+                                <span></span>
+                            </a>
+                            <nav class="menu black-color" id="menu">
+                                <ul class="my-list">
+                                    <li class="dropdown">
+                                        <a href="catagory.html">Drama</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="catagory.html">Comedy</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Action</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Romance</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Horror</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Comedy</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Romance</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Horror</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Fantasy</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Sci-Fi</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Thriller</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Western</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Adventure</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Documentary</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-sm-8 col-md-8 col-lg-8 d-block">
+                            <div class="header-right">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="search-click">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+
+                                        <div class="custom-search-input">
+                                            <form action="/action_page.php">
+                                                <input type="text" placeholder="Search.." name="search">
+                                                <button type="submit">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="tooltips">Wishlist</span>
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <span class="tooltips tol-right">Notification</span>
+                                            <i class="far fa-bell"></i>
+                                        </a>
+
+                                    </li>
+
+                                    <li class="login">
+                                        <a href="#">Login</a>
+
+                                    </li>
+                                    <li class="button-home">
+                                        <div class="single-navicon">
+                                            <a href="index.html" class="navSidebar-button">
+                                                <i class="fas fa-home"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Menu Area End-->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div
+            class="modal fade notification-modal"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Notifications</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Area Start-->
+
+        <main class="bg-theme-color">
+            <!-- Banner Area Start -->
+            <div
+                class="banner-area relative pt-150 pb-70"
+                style="background: url('img/banner/banner-4.png') center center / cover; height: 100vh">
+                <a href="#">
+                    <img class="inset-center" src="img/icon.png" alt="Icon">
+                </a>
+            </div>
+            <!-- Banner Area Start -->
+
+            <!-- Movie Title Area -->
+            <div class="movie-title-area bg-blue py-25">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12 title-area">
+                            <div class="movie-title">
+                                <h4 class="font-24 font-medium white-color">Movie Name Title Goes Here</h4>
+                                <h4 class="font-24 font-medium white-color">Duration : 2 : 45 min</h4>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="review text-center">
+                                <ul>
+                                    <li class="font-24 font-medium white-color">Ratting :</li>
+                                    <li>
+                                        <i class="fas fa-star orange-color"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star orange-color"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star orange-color"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star orange-color"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-star blue-300-color"></i>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="hit-list text-center">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-eye"></i>
+                                    </li>
+                                    <li>
+                                        <p>2501</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="wishlist-add text-center">
+                                <ul>
+                                    <li>
+                                        <p>Add To Wishlist</p>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" id="wishlist">
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 text-right download-btn">
+                            <div>
+                                <a href="#" class="btn btn-red shadow-3 my-30">Download Now
+                                    <i class="fas fa-long-arrow-alt-right"></i>
+                                </a>
+                            </div>
+
+                            <div class="share-area">
+                                <p>Share with</p>
+                                <ul>
+                                    <li>
+                                        <a href="#" class="facebook">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="facebook">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="facebook">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Movie Title Area -->
+
+            <div class="movie-dec py-40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="font-24 font-medium white-color">Overview</h4>
+                            <hr>
+                            <p class="font-roboto line-height-40 white-color pt-10">Lorem Ipsum is simply
+                                dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the
+                                release of Letraset sheet s containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software .</p>
+                            <p class="font-roboto line-height-40 white-color">Lorem Ipsum is simply dummy
+                                text of the printing and typesetting industry. Lorem Ipsum has been the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer
+                                took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries, but also the leap into electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the
+                                release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                                with desktop publishing software .</p>
+                            <h4 class="font-24 font-medium white-color">Acters</h4>
+                            <hr>
+
+                            <div class="container actor-area pt-40">
+                                <div
+                                    class="carousel -mx-15"
+                                    data-flickity='{"cellAlign": "left","contain": true, "prevNextButtons": true, "pageDots": false }'>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="">
+                                        <div class="actor-details">
+                                            <div class="actres-img  text-center">
+                                                <img src="img/acters/actres-4.png" alt="Actres">
+                                            </div>
+                                            <p>Tom cruise</p>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="post-meta">
+                                <li>
+                                    <h4 class="font-24 font-medium white-color">Writter</h4>
+                                    <hr>
+                                    <h4 class="font-24 font-medium white-color">Mr Jhon Sina Khan</h4>
+                                </li>
+                                <li>
+                                    <h4 class="font-24 font-medium white-color">Director</h4>
+                                    <hr>
+                                    <h4 class=" white-color">Karan Zohar Baghi</h4>
+                                </li>
+                                <li>
+                                    <h4 class="font-24 font-medium white-color">Genre</h4>
+                                    <hr>
+                                    <h4 class="font-24 font-medium white-color">Hollywood Action Movie</h4>
+                                </li>
+                                <li>
+                                    <h4 class="font-24 font-medium white-color">Country</h4>
+                                    <hr>
+                                    <h4 class="font-24 font-medium white-color">Bangladesh, Hong Kong</h4>
+                                </li>
+                                <li>
+                                    <h4 class="font-24 font-medium white-color">Release Date</h4>
+                                    <hr>
+                                    <h4 class="font-24 font-medium white-color">25 Jun, 2020</h4>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div class="col-6 col-sm-8">
+                            <div class="title-shape">
+                                <h3 class="font-medium white-color line-height-30">You May Also Like</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="seemore-post pt-10">
+                                <h4 class="font-roboto text-right">
+                                    <a class="white-color" href="#">See All
+                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="carousel -mx-15"
+                        data-flickity='{"contain": true, "prevNextButtons": false, "pageDots": false }'>
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30 "><img src="img/features-4.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30"><img src="img/features-5.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">Bike Man</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30"><img src="img/features-6.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">Lola</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30"><img src="img/features-7.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">Star is Born</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30"><img src="img/features-4.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30"><img src="img/features-5.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">Bike Man</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30"><img src="img/features-6.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">Lola</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <div class="tranding-post relative pt-30"><img src="img/features-7.png" alt="Tranding Photo"/>
+                                <div class="post-content">
+                                    <h3 class="font-medium">Star is Born</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <section class="recent-area movie-page pb-40">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-6 col-sm-8">
+                            <div class="title-shape pb-20">
+                                <h3 class="font-medium white-color line-height-30">You May Also Like</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="seemore-post pt-10">
+                                <h4 class="font-roboto text-right">
+                                    <a class="white-color" href="#">See All
+                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="carousel -mx-15"
+                        data-flickity='{"cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+                        <div >
+
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-2.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-3.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-4.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-5.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-6.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-6.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-6.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-6.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-6.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div >
+                            <div class="popular-post relative pt-30"><img src="img/recent/recent-6.png" alt="Recent Photo"/>
+                                <img class="primum-tag" src="img/vip.svg" alt="premium">
+                                <div class="post-content">
+                                    <div class="wishlist" id="#wishlist">
+                                        <i class="far fa-heart"></i>
+                                        <span>Add Wishlist</span>
+                                    </div>
+                                    <h3 class="font-medium">IT Horror Film</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-blue py-50">
+            <div class="container">
+                <div class="footer-area border-bottom pb-20">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="footer-content white-color">
+                                <img src="img/logo.png" alt="Footer Logo">
+                                <p class="font-roboto pt-25">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                    ab illo inventore veritatis</p>
+                                <ul class="footer-social-link white-color d-padding-x-15 pt-30 pt-xl-85">
+                                    <li>
+                                        <a href="#" class="bg-fb">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="bg-twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="bg-pin">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="bg-linkedin">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <div class="footer-widget">
+                                <h3 class="font-24 font-medium white-color pb-20">More Host XY</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Media</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Career</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <div class="footer-widget">
+                                <h3 class="font-24 font-medium white-color pb-20">SUPPORT</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms of Use</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Partners</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <div class="footer-widget">
+                                <h3 class="font-24 font-medium white-color pb-20">Company</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Technology</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-2">
+                            <div class="footer-widget">
+                                <h3 class="font-24 font-medium white-color pb-20">Quick Links</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Latest News</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Case Studies</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Where We Are</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal-1">Queries</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom red-gr pt-20">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="font-roboto d-block white-color text-center text-md-left">Copyright © 2020 Host xy - All rights reserved.</span>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-menu text-center text-md-right">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Terms of Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Site Map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- -----query modal------ -->
+        <div
+            class="modal fade query-modal"
+            id="exampleModal-1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Your Query</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="4"
+                                    placeholder="Your Queries/ Movie Request"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-red" href="#">Submit
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL CONTENT SAMPLE STARTS HERE -->
+
+        <!-- model -->
+        <div class="popup" id="popup">
+            <div class="contentBox">
+                <div class="imgbx">
+                    <img src="img/logo.png">
+                </div>
+                <div class="contant">
+                    <div>
+                        <h2>Host XY</h2>
+                        <p style="margin-bottom: 0rem!important;">Flix Application Movies App / Tv Seris / Live Channel - Demo app</p>
+
+                    </div>
+                </div>
+                <div class="all-pack-dtls" style="padding-right: 5px;">
+                    <div class="all-offers">
+                        <a href="catagory.html">
+                            Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- model -->
+
+        <!--Scroll to top-->
+        <a href="#" class="scrollToTop">
+            <span class="fas fa-angle-up"></span>
+        </a>
+
+        <a href="index.html" class="back-home-bottom">
+            <i class="fas fa-home"></i>
+        </a>
+
+        <!-- jquery JS -->
+        <script src="js/plugin/jquery-3.5.0.min.js"></script>
+        <!-- swiper JS -->
+        <script src="js/plugin/swiper-bundle.min.js"></script>
+        <!-- isotope JS -->
+        <script src="js/plugin/isotope.pkgd.min.js"></script>
+        <!-- mmenu-light JS -->
+        <script src="js/plugin/mmenu-light.js"></script>
+        <!-- flickity JS -->
+        <script src="js/plugin/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+        <script src="js/plugin/popper.min.js"></script>
+        <script src="js/plugin/bootstrap.min.js"></script>
+
+        <!-- script JS -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

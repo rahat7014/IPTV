@@ -1,0 +1,55 @@
+.catagory-item {
+    .catagory-img {
+        background-repeat: no-repeat;
+        @include size(66px);
+        margin: auto;
+    }
+
+    .ticket {
+        background-image: url('../img/icon/headphone(1).png');
+    }
+
+    .journalism {
+        background: url('../img/icon/journalism.png');
+        background-repeat: no-repeat;
+    }
+
+    .outline {
+        background: url('../img/icon/outline.png');
+    }
+
+    .quiz {
+        background: url('../img/icon/quiz.png');
+    }
+
+    h3 {
+        padding-top: 25px;
+    }
+
+    &:hover {
+        .catagory-img {
+            background-repeat: no-repeat;
+        }
+
+        .ticket {
+            background: url('../img/icon/ticket-1.png');
+        }
+
+        .journalism {
+            background: url('../img/icon/journalism-1.png');
+            background-repeat: no-repeat;
+        }
+
+        .outline {
+            background: url('../img/icon/outline-1.png');
+        }
+
+        .quiz {
+            background: url('../img/icon/quiz-1.png');
+        }
+
+        h3 {
+            opacity: 1;
+        }
+    }
+}

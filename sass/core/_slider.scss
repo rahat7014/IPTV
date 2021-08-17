@@ -1,0 +1,66 @@
+.online-store-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+.swiper-container,
+.online-store-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 215px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.banner-right-slider{
+  .swiper-slide-active{
+    .play-icon{
+      background: url('../img/play-button.png') center center / cover;
+      @include absolute(top 50% left 50%);
+      transform: translate(-50%, -50%);
+      @include size(43px);
+    }
+  }
+}
+
+.tranding-slider-container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  z-index: 1;
+}
+
+.trnading-slider{
+  position: relative;
+  height: 388px;
+
+}
+
+.popular-post-slider{
+  .single-slider{
+    img{
+      min-height: 300px;
+      object-fit: cover;
+    }
+  }
+}

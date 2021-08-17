@@ -1,0 +1,11 @@
+.shadow-3 {
+  @include shadow($y: 3px, $b: 30px, $color: #000000, $opacity: 0.56);
+}
+
+.red-shadow-3 {
+  @include shadow($y: 3px, $b: 20px, $color: #F96331, $opacity: 0.51);
+}
+
+.shadow-6 {
+  @include shadow($y: 6px, $b: 20px, $color: $blue-300, $opacity: 0.47);
+}

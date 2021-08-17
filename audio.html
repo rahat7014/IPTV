@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Iptv
+        </title>
+        <!-- simplebar CSS -->
+        <link rel="stylesheet" href="css/vendors/simplebar.css"/>
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="css/vendors/fontawesome.min.css"/>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- swiper CSS-->
+        <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css"/>
+        <!-- flickity CSS-->
+        <link rel="stylesheet" href="css/vendors/flickity.css"/>
+        <link rel="stylesheet" href="assets/vendors/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="css/glider.min.css">
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+        <link rel="stylesheet" href="css/vendors/bootstrap.min.css"/>
+
+        <!-- Style CSS-->
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+    <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+        <!-- Header Area Start-->
+        <header class="bg-theme-color bg-blue">
+            <div class="header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo-->
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <div class="logo-area">
+                                <a href="index.html"><img src="img/logo.png" alt="Logo"/></a>
+                            </div>
+                        </div>
+                        <!-- Logo-->
+                        <!-- Menu Area Start -->
+                        <div class="col-sm-6 col-md-6 d-none">
+                            <a class="mobile-menu" href="#menu">
+                                <span></span>
+                            </a>
+                            <nav class="menu black-color" id="menu">
+                                <ul class="my-list">
+                                    <li class="dropdown">
+                                        <a href="catagory.html">Drama</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="catagory.html">Comedy</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Action</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Romance</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Horror</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Comedy</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Romance</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Horror</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Fantasy</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Sci-Fi</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Thriller</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Western</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Adventure</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Documentary</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-sm-8 col-md-8 col-lg-8 d-block">
+                            <div class="header-right">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="search-click">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+
+                                        <div class="custom-search-input">
+                                            <form action="/action_page.php">
+                                                <input type="text" placeholder="Search.." name="search">
+                                                <button type="submit">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="tooltips">Wishlist</span>
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <span class="tooltips tol-right">Notification</span>
+                                            <i class="far fa-bell"></i>
+                                        </a>
+
+                                    </li>
+
+                                    <li class="login">
+                                        <a href="#">Login</a>
+
+                                    </li>
+                                    <li class="button-home">
+                                        <div class="single-navicon">
+                                            <a href="index.html" class="navSidebar-button">
+                                                <i class="fas fa-home"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Menu Area End-->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div
+            class="modal fade notification-modal"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Notifications</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Header Area Start-->
+
+        <main class="bg-theme-color">
+            <section class="recent-area movie-page music-cat pb-40 my-40">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-sm-8">
+                            <div class="title-shape pb-20">
+                                <h3 class="font-medium white-color line-height-30">Albums</h3>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="seemore-post pt-10">
+                                <h4 class="font-roboto text-right">
+                                    <a class="white-color" href="#">See All
+                                        <i class="fas fa-long-arrow-alt-right"></i>
+                                    </a>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="carousel -mx-15"
+                        data-flickity='{"cellAlign": "left", "contain": true, "prevNextButtons": false, "pageDots": false }'>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="category-item">
+                                <img src="img/audio-pic/1.jpg" alt="">
+                                <div class="ci-text">
+                                    <h4>Micke Smith</h4>
+                                    <p>Live from Madrid</p>
+                                </div>
+                                <a href="artist.html" class="ci-link">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="category-item">
+                                <img src="img/audio-pic/2.jpg" alt="">
+                                <div class="ci-text">
+                                    <h4>Micke Smith</h4>
+                                    <p>Live from Madrid</p>
+                                </div>
+                                <a href="artist.html" class="ci-link">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="category-item">
+                                <img src="img/audio-pic/3.jpg" alt="">
+                                <div class="ci-text">
+                                    <h4>Micke Smith</h4>
+                                    <p>Live from Madrid</p>
+                                </div>
+                                <a href="artist.html" class="ci-link">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="category-item">
+                                <img src="img/audio-pic/4.jpg" alt="">
+                                <div class="ci-text">
+                                    <h4>Micke Smith</h4>
+                                    <p>Live from Madrid</p>
+                                </div>
+                                <a href="artist.html" class="ci-link">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="category-item">
+                                <img src="img/audio-pic/5.jpg" alt="">
+                                <div class="ci-text">
+                                    <h4>Micke Smith</h4>
+                                    <p>Live from Madrid</p>
+                                </div>
+                                <a href="artist.html" class="ci-link">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="category-item">
+                                <img src="img/audio-pic/6.jpg" alt="">
+                                <div class="ci-text">
+                                    <h4>Micke Smith</h4>
+                                    <p>Live from Madrid</p>
+                                </div>
+                                <a href="artist.html" class="ci-link">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-6">
+                            <div class="category-item">
+                                <img src="img/audio-pic/7.jpg" alt="">
+                                <div class="ci-text">
+                                    <h4>Micke Smith</h4>
+                                    <p>Live from Madrid</p>
+                                </div>
+                                <a href="artist.html" class="ci-link">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="ad">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="ad-1 mt-40">
+                                <img src="img/ads/ad1.gif" class="img-fluid">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="search-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="panel panel-default panel-red">
+                                <div class="panel-heading panel-heading-red">
+                                    <h3 class="panel-title">Bangla Song - Search or Browse by Artist</h3>
+                                </div>
+                                <!-- panel heading -->
+                                <div class="panel-body">
+                                    <form action="#" method="get">
+                                        <div class="input-group">
+                                            <input
+                                                type="text"
+                                                name="q"
+                                                class="form-control"
+                                                placeholder="Artist - Song Name"
+                                                value=""
+                                                id="search">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="submit">
+                                                    <span class="fas fa-search"></span>
+                                                </button>
+                                            </span>
+                                        </div>
+                                        <!-- /input-group -->
+                                    </form>
+                                    <div id="update"></div>
+
+                                    <p></p>
+                                    <center>
+                                        <a href="#" class="btn btn-default artist-index" role="button">A</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">B</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">C</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">D</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">E</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">F</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">G</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">H</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">I</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">J</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">K</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">L</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">M</a>
+                                        <a href="/#" class="btn btn-default artist-index" role="button">N</a>
+                                        <a href="/#" class="btn btn-default artist-index" role="button">O</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">P</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">Q</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">R</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">S</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">T</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">U</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">V</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">W</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">X</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">Y</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">Z</a>
+                                        <p></p>
+                                        <a href="#" class="btn btn-default artist-index" role="button">Mixed Albums</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">Movie Songs</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">Deshattobodhok</a>
+                                        <a href="#" class="btn btn-default artist-index" role="button">Polli Geeti</a>
+                                    </center>
+
+                                </div>
+                                <!-- /panel-body -->
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="album-artist">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 1 -->
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- 3 -->
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 -->
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="song-info-box">
+                                            <img src="img/audio-pic/1.jpg" alt="">
+                                            <div class="song-info">
+                                                <h4>Jennifer Brown</h4>
+                                                <p>One Night in Ibiza</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-8 pt-md-4">
+                            <div class="row">
+                                <div class="song-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="song-info-box">
+                                                <img src="img/audio-pic/1.jpg" alt="">
+                                                <div class="song-info">
+                                                    <h4>Jennifer Brown</h4>
+                                                    <p>One Night in Ibiza</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_player_container">
+                                                <div class="single_player">
+                                                    <div
+                                                        class="jp-jplayer jplayer"
+                                                        data-ancestor=".jpcontainer-1"
+                                                        data-url="mp3/1.mp3"
+                                                        id="jp_jplayer_0"
+                                                        style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;">
+                                                        <audio
+                                                            id="jp_audio_0"
+                                                            preload="metadata"
+                                                            src="https://technohaat.net/iftv/mp3/1.mp3"></audio>
+                                                    </div>
+                                                    <div
+                                                        class="jp-audio jpcontainer-1"
+                                                        role="application"
+                                                        aria-label="media player">
+                                                        <div class="jp-gui jp-interface">
+
+                                                            <!-- Player Controls -->
+                                                            <div class="player_controls_box">
+                                                                <button class="jp-prev player_button" tabindex="0"></button>
+                                                                <button class="jp-play player_button" tabindex="0"></button>
+                                                                <button class="jp-next player_button" tabindex="0"></button>
+                                                                <button class="jp-stop player_button" tabindex="0"></button>
+
+                                                            </div>
+                                                            <!-- Progress Bar -->
+
+                                                            <div class="player_bars">
+
+                                                                <div class="equlizer"></div>
+
+                                                                <div class="jp-progress">
+                                                                    <div class="jp-seek-bar" style="width: 100%;">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="jp-play-bar" style="width: 0%;">
+                                                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="jp-duration ml-auto"
+                                                                    style="color: #fff;"
+                                                                    role="timer"
+                                                                    aria-label="duration">01:30</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jp-no-solution" style="display: none;">
+                                                            <span>Update Required</span>
+                                                            To play the media you will need to either update your browser to a recent
+                                                            version or update your
+                                                            <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="songs-links">
+                                                <a>
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+
+                                                <a>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- song-1 -->
+
+                                <div class="song-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="song-info-box">
+                                                <img src="img/audio-pic/2.jpg" alt="">
+                                                <div class="song-info">
+                                                    <h4>Jennifer Brown</h4>
+                                                    <p>One Night in Ibiza</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_player_container">
+                                                <div class="single_player">
+                                                    <div
+                                                        class="jp-jplayer jplayer"
+                                                        data-ancestor=".jpcontainer-2"
+                                                        data-url="mp3/2.mp3"
+                                                        id="jp_jplayer_1"
+                                                        style="width: 0px; height: 0px;"><img id="jp_poster_1" style="width: 0px; height: 0px; display: none;">
+                                                        <audio
+                                                            id="jp_audio_1"
+                                                            preload="metadata"
+                                                            src="https://technohaat.net/iftv/mp3/2.mp3"></audio>
+                                                    </div>
+                                                    <div
+                                                        class="jp-audio jpcontainer-2"
+                                                        role="application"
+                                                        aria-label="media player">
+                                                        <div class="jp-gui jp-interface">
+
+                                                            <!-- Player Controls -->
+                                                            <div class="player_controls_box">
+                                                                <button class="jp-prev player_button" tabindex="0"></button>
+                                                                <button class="jp-play player_button" tabindex="0"></button>
+                                                                <button class="jp-next player_button" tabindex="0"></button>
+                                                                <button class="jp-stop player_button" tabindex="0"></button>
+                                                            </div>
+                                                            <!-- Progress Bar -->
+                                                            <div class="player_bars">
+
+                                                                <div class="equlizer"></div>
+
+                                                                <div class="jp-progress">
+                                                                    <div class="jp-seek-bar" style="width: 100%;">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="jp-play-bar" style="width: 0%;">
+                                                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="jp-duration ml-auto"
+                                                                    style="color: #fff;"
+                                                                    role="timer"
+                                                                    aria-label="duration">01:30</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jp-no-solution" style="display: none;">
+                                                            <span>Update Required</span>
+                                                            To play the media you will need to either update your browser to a recent
+                                                            version or update your
+                                                            <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="songs-links">
+                                                <a>
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+
+                                                <a>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- song 2 -->
+
+                                <div class="song-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="song-info-box">
+                                                <img src="img/audio-pic/3.jpg" alt="">
+                                                <div class="song-info">
+                                                    <h4>Jennifer Brown</h4>
+                                                    <p>One Night in Ibiza</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_player_container">
+                                                <div class="single_player">
+                                                    <div
+                                                        class="jp-jplayer jplayer"
+                                                        data-ancestor=".jpcontainer-3"
+                                                        data-url="mp3/3.mp3"
+                                                        id="jp_jplayer_2"
+                                                        style="width: 0px; height: 0px;"><img id="jp_poster_2" style="width: 0px; height: 0px; display: none;">
+                                                        <audio
+                                                            id="jp_audio_2"
+                                                            preload="metadata"
+                                                            src="https://technohaat.net/iftv/mp3/3.mp3"></audio>
+                                                    </div>
+                                                    <div
+                                                        class="jp-audio jpcontainer-3"
+                                                        role="application"
+                                                        aria-label="media player">
+                                                        <div class="jp-gui jp-interface">
+
+                                                            <!-- Player Controls -->
+                                                            <div class="player_controls_box">
+                                                                <button class="jp-prev player_button" tabindex="0"></button>
+                                                                <button class="jp-play player_button" tabindex="0"></button>
+                                                                <button class="jp-next player_button" tabindex="0"></button>
+                                                                <button class="jp-stop player_button" tabindex="0"></button>
+                                                            </div>
+                                                            <!-- Progress Bar -->
+                                                            <div class="player_bars">
+
+                                                                <div class="equlizer"></div>
+
+                                                                <div class="jp-progress">
+                                                                    <div class="jp-seek-bar" style="width: 100%;">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="jp-play-bar" style="width: 0%;">
+                                                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="jp-duration ml-auto"
+                                                                    style="color: #fff;"
+                                                                    role="timer"
+                                                                    aria-label="duration">01:30</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jp-no-solution" style="display: none;">
+                                                            <span>Update Required</span>
+                                                            To play the media you will need to either update your browser to a recent
+                                                            version or update your
+                                                            <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="songs-links">
+                                                <a>
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+
+                                                <a>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- song-3 -->
+                                <div class="song-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="song-info-box">
+                                                <img src="img/audio-pic/4.jpg" alt="">
+                                                <div class="song-info">
+                                                    <h4>Jennifer Brown</h4>
+                                                    <p>One Night in Ibiza</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_player_container">
+                                                <div class="single_player">
+                                                    <div
+                                                        class="jp-jplayer jplayer"
+                                                        data-ancestor=".jpcontainer-4"
+                                                        data-url="mp3/4.mp3"
+                                                        id="jp_jplayer_3"
+                                                        style="width: 0px; height: 0px;"><img id="jp_poster_3" style="width: 0px; height: 0px; display: none;">
+                                                        <audio
+                                                            id="jp_audio_3"
+                                                            preload="metadata"
+                                                            src="https://technohaat.net/iftv/mp3/4.mp3"></audio>
+                                                    </div>
+                                                    <div
+                                                        class="jp-audio jpcontainer-4"
+                                                        role="application"
+                                                        aria-label="media player">
+                                                        <div class="jp-gui jp-interface">
+
+                                                            <!-- Player Controls -->
+                                                            <div class="player_controls_box">
+                                                                <button class="jp-prev player_button" tabindex="0"></button>
+                                                                <button class="jp-play player_button" tabindex="0"></button>
+                                                                <button class="jp-next player_button" tabindex="0"></button>
+                                                                <button class="jp-stop player_button" tabindex="0"></button>
+                                                            </div>
+                                                            <!-- Progress Bar -->
+                                                            <div class="player_bars">
+
+                                                                <div class="equlizer"></div>
+
+                                                                <div class="jp-progress">
+                                                                    <div class="jp-seek-bar" style="width: 100%;">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="jp-play-bar" style="width: 0%;">
+                                                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="jp-duration ml-auto"
+                                                                    style="color: #fff;"
+                                                                    role="timer"
+                                                                    aria-label="duration">01:30</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jp-no-solution" style="display: none;">
+                                                            <span>Update Required</span>
+                                                            To play the media you will need to either update your browser to a recent
+                                                            version or update your
+                                                            <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="songs-links">
+                                                <a>
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+
+                                                <a>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- song 4 -->
+
+                                <div class="song-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="song-info-box">
+                                                <img src="img/audio-pic/5.jpg" alt="">
+                                                <div class="song-info">
+                                                    <h4>Jennifer Brown</h4>
+                                                    <p>One Night in Ibiza</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_player_container">
+                                                <div class="single_player">
+                                                    <div
+                                                        class="jp-jplayer jplayer"
+                                                        data-ancestor=".jpcontainer-5"
+                                                        data-url="mp3/5.mp3"
+                                                        id="jp_jplayer_4"
+                                                        style="width: 0px; height: 0px;"><img id="jp_poster_4" style="width: 0px; height: 0px; display: none;">
+                                                        <audio
+                                                            id="jp_audio_4"
+                                                            preload="metadata"
+                                                            src="https://technohaat.net/iftv/mp3/5.mp3"></audio>
+                                                    </div>
+                                                    <div
+                                                        class="jp-audio jpcontainer-5"
+                                                        role="application"
+                                                        aria-label="media player">
+                                                        <div class="jp-gui jp-interface">
+
+                                                            <!-- Player Controls -->
+                                                            <div class="player_controls_box">
+                                                                <button class="jp-prev player_button" tabindex="0"></button>
+                                                                <button class="jp-play player_button" tabindex="0"></button>
+                                                                <button class="jp-next player_button" tabindex="0"></button>
+                                                                <button class="jp-stop player_button" tabindex="0"></button>
+                                                            </div>
+                                                            <!-- Progress Bar -->
+                                                            <div class="player_bars">
+                                                                <div class="equlizer"></div>
+                                                                <div class="jp-progress">
+                                                                    <div class="jp-seek-bar" style="width: 100%;">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="jp-play-bar" style="width: 0%;">
+                                                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="jp-duration ml-auto"
+                                                                    style="color: #fff;"
+                                                                    role="timer"
+                                                                    aria-label="duration">01:30</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jp-no-solution" style="display: none;">
+                                                            <span>Update Required</span>
+                                                            To play the media you will need to either update your browser to a recent
+                                                            version or update your
+                                                            <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="songs-links">
+                                                <a>
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+
+                                                <a>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- song 5 -->
+
+                                <div class="song-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="song-info-box">
+                                                <img src="img/audio-pic/6.jpg" alt="">
+                                                <div class="song-info">
+                                                    <h4>Jennifer Brown</h4>
+                                                    <p>One Night in Ibiza</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_player_container">
+                                                <div class="single_player">
+                                                    <div
+                                                        class="jp-jplayer jplayer"
+                                                        data-ancestor=".jpcontainer-6"
+                                                        data-url="mp3/6.mp3"
+                                                        id="jp_jplayer_5"
+                                                        style="width: 0px; height: 0px;"><img id="jp_poster_5" style="width: 0px; height: 0px; display: none;">
+                                                        <audio
+                                                            id="jp_audio_5"
+                                                            preload="metadata"
+                                                            src="https://technohaat.net/iftv/mp3/6.mp3"></audio>
+                                                    </div>
+                                                    <div
+                                                        class="jp-audio jpcontainer-6"
+                                                        role="application"
+                                                        aria-label="media player">
+                                                        <div class="jp-gui jp-interface">
+
+                                                            <!-- Player Controls -->
+                                                            <div class="player_controls_box">
+                                                                <button class="jp-prev player_button" tabindex="0"></button>
+                                                                <button class="jp-play player_button" tabindex="0"></button>
+                                                                <button class="jp-next player_button" tabindex="0"></button>
+                                                                <button class="jp-stop player_button" tabindex="0"></button>
+                                                            </div>
+                                                            <!-- Progress Bar -->
+                                                            <div class="player_bars">
+                                                                <div class="equlizer"></div>
+                                                                <div class="jp-progress">
+                                                                    <div class="jp-seek-bar" style="width: 100%;">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="jp-play-bar" style="width: 0%;">
+                                                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="jp-duration ml-auto"
+                                                                    style="color: #fff;"
+                                                                    role="timer"
+                                                                    aria-label="duration">02:33</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jp-no-solution" style="display: none;">
+                                                            <span>Update Required</span>
+                                                            To play the media you will need to either update your browser to a recent
+                                                            version or update your
+                                                            <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="songs-links">
+                                                <a>
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+
+                                                <a>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- song 6 -->
+
+                                <div class="song-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="song-info-box">
+                                                <img src="img/audio-pic/7.jpg" alt="">
+                                                <div class="song-info">
+                                                    <h4>Jennifer Brown</h4>
+                                                    <p>One Night in Ibiza</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_player_container">
+                                                <div class="single_player">
+                                                    <div
+                                                        class="jp-jplayer jplayer"
+                                                        data-ancestor=".jpcontainer-7"
+                                                        data-url="mp3/7.mp3"
+                                                        id="jp_jplayer_6"
+                                                        style="width: 0px; height: 0px;"><img id="jp_poster_6" style="width: 0px; height: 0px; display: none;">
+                                                        <audio
+                                                            id="jp_audio_6"
+                                                            preload="metadata"
+                                                            src="https://technohaat.net/iftv/mp3/7.mp3"></audio>
+                                                    </div>
+                                                    <div
+                                                        class="jp-audio jpcontainer-7"
+                                                        role="application"
+                                                        aria-label="media player">
+                                                        <div class="jp-gui jp-interface">
+
+                                                            <!-- Player Controls -->
+                                                            <div class="player_controls_box">
+                                                                <button class="jp-prev player_button" tabindex="0"></button>
+                                                                <button class="jp-play player_button" tabindex="0"></button>
+                                                                <button class="jp-next player_button" tabindex="0"></button>
+                                                                <button class="jp-stop player_button" tabindex="0"></button>
+                                                            </div>
+                                                            <!-- Progress Bar -->
+                                                            <div class="player_bars">
+                                                                <div class="equlizer"></div>
+                                                                <div class="jp-progress">
+                                                                    <div class="jp-seek-bar" style="width: 100%;">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="jp-play-bar" style="width: 0%;">
+                                                                                    <div class="jp-current-time" role="timer" aria-label="time">00:00</div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="jp-duration ml-auto"
+                                                                    style="color: #fff;"
+                                                                    role="timer"
+                                                                    aria-label="duration">02:04</div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="jp-no-solution" style="display: none;">
+                                                            <span>Update Required</span>
+                                                            To play the media you will need to either update your browser to a recent
+                                                            version or update your
+                                                            <a href="https://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class="songs-links">
+                                                <a>
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+
+                                                <a>
+                                                    <i class="fas fa-share-alt"></i>
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- song7  -->
+
+                                <div class="col-12 text-center">
+                                    <div class="pagination">
+                                        <a href="">
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                        <a href="" class="active">1</a>
+                                        <a href="">2</a>
+                                        <a href="">3</a>
+                                        <a href="">4</a>
+                                        <a href="">5</a>
+                                        <a href="">6</a>
+                                        <a href="">
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <div class="bar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-blue py-50">
+        <div class="container">
+            <div class="footer-area border-bottom pb-20">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="footer-content white-color">
+                            <img src="img/logo.png" alt="Footer Logo">
+                            <p class="font-roboto pt-25">Sed ut perspiciatis unde omnis iste natus error sit
+                                voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                ab illo inventore veritatis</p>
+                            <ul class="footer-social-link white-color d-padding-x-15 pt-30 pt-xl-85">
+                                <li>
+                                    <a href="#" class="bg-fb">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="bg-twitter">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="bg-pin">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="bg-linkedin">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-2">
+                        <div class="footer-widget">
+                            <h3 class="font-24 font-medium white-color pb-20">More Host XY</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Media</a>
+                                </li>
+                                <li>
+                                    <a href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Career</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-2">
+                        <div class="footer-widget">
+                            <h3 class="font-24 font-medium white-color pb-20">SUPPORT</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Partners</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-2">
+                        <div class="footer-widget">
+                            <h3 class="font-24 font-medium white-color pb-20">Company</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Technology</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-2">
+                        <div class="footer-widget">
+                            <h3 class="font-24 font-medium white-color pb-20">Quick Links</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Latest News</a>
+                                </li>
+                                <li>
+                                    <a href="#">Case Studies</a>
+                                </li>
+                                <li>
+                                    <a href="#">Where We Are</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-toggle="modal" data-target="#exampleModal-1">Queries</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom red-gr pt-20">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span class="font-roboto d-block white-color text-center text-md-left">Copyright � 2020 Host xy - All rights reserved.</span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer-menu text-center text-md-right">
+                                <ul>
+                                    <li>
+                                        <a href="#">Terms of Service</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Site Map</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- -----query modal------ -->
+    <div
+        class="modal fade query-modal"
+        id="exampleModal-1"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Your Query</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea
+                                class="form-control"
+                                id="exampleFormControlTextarea1"
+                                rows="4"
+                                placeholder="Your Queries/ Movie Request"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-red" href="#">Submit
+                        <i class="fas fa-long-arrow-alt-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="contentBox">
+            <div class="imgbx">
+                <img src="img/logo.png">
+            </div>
+            <div class="contant">
+                <div>
+                    <h2>Host XY</h2>
+                    <p style="margin-bottom: 0rem!important;">Flix Application Movies App / Tv Seris / Live Channel - Demo app</p>
+
+                </div>
+            </div>
+            <div class="all-pack-dtls" style="padding-right: 5px;">
+                <div class="all-offers">
+                    <a href="catagory.html">
+                        Download</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Scroll to top-->
+    <a href="#" class="scrollToTop">
+        <span class="fas fa-angle-up"></span>
+    </a>
+
+    <a href="index.html" class="back-home-bottom">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <!-- jquery JS -->
+    <script src="js/plugin/jquery-3.5.0.min.js"></script>
+    <!-- swiper JS -->
+    <script src="js/plugin/swiper-bundle.min.js"></script>
+    <!-- isotope JS -->
+    <script src="js/plugin/isotope.pkgd.min.js"></script>
+    <!-- mmenu-light JS -->
+    <script src="js/plugin/mmenu-light.js"></script>
+    <!-- flickity JS -->
+    <script src="js/plugin/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script src="js/plugin/popper.min.js"></script>
+    <script src="js/plugin/bootstrap.min.js"></script>
+
+    <!-- script JS -->
+    <script src="js/main.js"></script>
+
+    <script src="js/jquery.jplayer.min.js"></script>
+    <script src="js/jplayerInit.js"></script>
+</body>
+</html>

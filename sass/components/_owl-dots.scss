@@ -1,0 +1,57 @@
+// One OWl Carusel Dots 
+.owl-dots {
+  @include owl-dots($bg: $white, $before: true, $b-width: 22px, $b-border: 3px solid $global-color, $b-position: left -6px top -6px, $active: true, $active-before: true, $dots-position: right 0 bottom 25px, $translateX: 0, $width: 10px, $m-name: mr, $m-value: 28, $a-bg: $red, $ab-width: 22px, $ab-border: 3px solid $white, $ab-position: top -6px left -6px);
+}
+
+// .cl-dots{
+//   position: absolute;
+//   top: 50%;
+//   left: 15px;
+//   transform: translateY(-50%);
+//   @media #{$desktop}{
+//     left: 45px;
+//   }
+//   button{
+//     display: block;
+//     width: 10px;
+//     height: 10px;
+//     background: $black;
+//     border-radius: 50%;
+//     border: 2px solid $black;
+//     margin-bottom: 25px;
+//     padding: 5px;
+//     &.active{
+//       background: transparent;
+//     }
+//   }
+// }
+// .bl-dots{
+//   position: absolute;
+//   left: 6%;
+//   bottom: 80px;
+//   button {
+//     position: relative;
+//     width: 8px;
+//     height: 8px;
+//     display: inline-block;
+//     background: $white;
+//     border-radius: 50%;
+//     margin-left: 15px;
+//     padding: 5px;
+
+//     &.active {
+//       width: 4px;
+//       height: 4px;
+//       &::before{
+//         position: absolute;
+//         content: '';
+//         width: 25px;
+//         height: 25px;
+//         top: -8px;
+//         left: -8px;
+//         border: 2px solid $white;
+//         border-radius: 50%;
+//       }
+//     }
+//   }
+// }

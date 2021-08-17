@@ -1,0 +1,38 @@
+// Responsive Display 
+.d-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.d-md-block{
+  @include md {
+    display: block;
+  }
+}
+
+.d-lg-block{
+  @include lg {
+    display: block;
+  }
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-lg-flex {
+  @include lg {
+    display: flex;
+  }
+}
+
+.justify-content-end {
+  justify-content: right;
+} 

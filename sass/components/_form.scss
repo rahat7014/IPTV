@@ -1,0 +1,92 @@
+input, textarea{
+   @include form-input($fs: 24px, $fw: 600, $color: $black-700, $opacity: 0.51, $bg: $white, $bg-opacity: 0.10, $py: 30px, $px: 20px, $radius-size: 6px, $focus: true,);
+   @include border($color: #ECECEC);
+}
+
+.subscribe-area{
+   position: relative;
+   padding-top: 0;
+   padding-bottom: 100px;
+
+   @include lg {
+      padding-top: 110px;
+      padding-bottom: 440px;
+   }
+
+   h3 {
+      line-height: 40px;
+   }
+
+   form {
+      margin-top: 40px;
+      position: relative;
+      input{
+         width: 100%;
+         max-width: 1190px;
+         padding: 20px;
+         font-size: 16px;
+         
+         @include md {
+            padding: 30px 20px;
+            font-size: 20px;
+         }
+      }
+
+      button {
+         border: none;
+         @include absolute(right 15px top 20px);
+         @include shadow($y: 3px, $b: 30px, $color: #000000, $opacity: 0.56);
+
+         @include md {
+            top: 30px;
+            right: 20px;
+         }
+      }
+   }
+}
+
+.login-form{
+   padding-top: 20px;
+
+   input[type="password"],
+   input[type="email"]{
+      @include size(100%, 60px);
+      max-width: 620px;
+      font-family: $roboto;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      background: $white;
+      margin: 15px 0;
+   }
+
+   input[type="checkbox"] {
+      @include size(0);
+   }
+
+   .remember{
+      label {
+         color: $white;
+         font-family: $roboto;
+         margin-left: 5px;
+      }
+   }
+
+   .login-wrapper{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+
+      a{
+         color: $red;
+         font-family: $roboto;
+      }
+   }
+
+   button {
+      border: none;
+      width: 100%;
+      border-radius: 30px;
+      margin-top: 25px;
+   }
+}

@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Iptv
+        </title>
+        <!-- simplebar CSS -->
+        <link rel="stylesheet" href="css/vendors/simplebar.css"/>
+        <!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="css/vendors/fontawesome.min.css"/>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <!-- swiper CSS-->
+        <link rel="stylesheet" href="css/vendors/swiper-bundle.min.css"/>
+        <!-- flickity CSS-->
+        <link rel="stylesheet" href="css/vendors/flickity.css"/>
+        <link rel="stylesheet" href="assets/vendors/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+        <link rel="stylesheet" href="css/glider.min.css">
+
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+        <link rel="stylesheet" href="css/vendors/bootstrap.min.css"/>
+
+        <!-- Style CSS-->
+        <link rel="stylesheet" href="css/style.css"/>
+
+    </head>
+    <body>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+
+        <!-- Header Area Start-->
+        <header class="bg-blue">
+            <div class="header-area">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <!-- Logo-->
+                        <div class="col-sm-4 col-md-4 col-lg-4">
+                            <div class="logo-area">
+                                <a href="index.html"><img src="img/logo.png" alt="Logo"/></a>
+                            </div>
+                        </div>
+                        <!-- Logo-->
+                        <!-- Menu Area Start -->
+                        <div class="col-sm-6 col-md-6 d-none">
+                            <a class="mobile-menu" href="#menu">
+                                <span></span>
+                            </a>
+                            <nav class="menu black-color" id="menu">
+                                <ul class="my-list">
+                                    <li class="dropdown">
+                                        <a href="catagory.html">Drama</a>
+                                        <ul class="sub-menu">
+                                            <li>
+                                                <a href="catagory.html">Comedy</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Action</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Romance</a>
+                                            </li>
+                                            <li>
+                                                <a href="catagory.html">Horror</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Comedy</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Action</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Romance</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Horror</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Fantasy</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Sci-Fi</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Thriller</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Western</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Adventure</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="catagory.html">Documentary</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-sm-8 col-md-8 col-lg-8 d-block">
+                            <div class="header-right">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="search-click">
+                                            <i class="fas fa-search"></i>
+                                        </a>
+
+                                        <div class="custom-search-input">
+                                            <form action="/action_page.php">
+                                                <input type="text" placeholder="Search.." name="search">
+                                                <button type="submit">
+                                                    <i class="fa fa-search"></i>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <span class="tooltips">Wishlist</span>
+                                            <i class="far fa-heart"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                            <span class="tooltips tol-right">Notification</span>
+                                            <i class="far fa-bell"></i>
+                                        </a>
+
+                                    </li>
+
+                                    <li class="login">
+                                        <a href="#">Login</a>
+                                    </li>
+                                    <li class="button-home">
+                                        <div class="single-navicon">
+                                            <a href="index.html" class="navSidebar-button">
+                                                <i class="fas fa-home"></i>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Menu Area End-->
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- notifiacation pop up start -->
+        <div
+            class="modal fade notification-modal"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Notifications</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="single-page.html">
+                            <div class="notification-content">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <img src="img/features-2.png">
+                                    </div>
+                                    <div class="col-9">
+                                        <h5 class="movie-name">Kaali || Full Hindi Dubbed Movie
+                                        </h5>
+                                        <p class="catagory">South-Indian, Dubbed</p>
+                                        <p class="hits">
+                                            <ul>
+                                                <li>
+                                                    <i class="fas fa-eye"></i>
+                                                </li>
+                                                <li>20025</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- notifiacation pop up End-->
+
+        <main class="bg-theme-color">
+            <section class="container profile">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div class="col-xl-12 col-md-12">
+                        <div class="card user-card-full">
+                            <div class="row m-l-0 m-r-0">
+                                <div class="col-xl-6 col-lg-12 bg-c-lite-green user-profile">
+                                    <div class="card-block text-center text-white">
+                                        <div class="m-b-25">
+                                            <img src="img/tranding.png" class="img-radius" alt="User-Profile-Image">
+                                        </div>
+                                        <div class="info-list">
+                                            <ul>
+                                                <li>
+                                                    <a>Tanjil Ahamed</a>
+                                                </li>
+
+                                                <li>
+                                                    <a>tanjilahamed2019@gmail.com</a>
+                                                </li>
+
+                                                <li>
+                                                    <a>01887985997</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <a data-toggle="modal" data-target="#exampleModal2">
+                                            <i class="fas fa-edit"></i>
+                                        </a>
+
+                                        <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-12">
+                                    <div class="card-block">
+                                        <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Subscriber id</p>
+                                                <h6 class="f-w-400">10000101010</h6>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">subscription status</p>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <h6 class="f-w-400">Monthly</h6>
+                                                    </div>
+                                                    <div class="col-6">
+
+                                                        <a data-toggle="modal" data-target="#exampleModal3">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+
+                                                        <div
+                                                            class="modal fade "
+                                                            id="exampleModal3"
+                                                            tabindex="-1"
+                                                            aria-labelledby="exampleModalLabel"
+                                                            aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content sub-package">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title" id="exampleModalLabel">Packages</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                            <span aria-hidden="true">&times;</span>
+                                                                        </button>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        ...
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <a class="btn btn-red" href="#">Submit
+                                                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Registration Date</p>
+                                                <h6 class=" f-w-400">01-05-2021</h6>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="m-b-10 f-w-600">Expited Date</p>
+                                                <div data-countdown="2021-06-09">
+                                                    <h6 data-days="00" class="f-w-400">09-06-2021</h6>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-lg-12">
+                                                <div class="reg-done">
+                                                    <span>Your Subscription Will Be Expedited Very Soon.Please Renew Your Subscribtion.</span>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!-- <ul class="social-link list-unstyled m-t-40 m-b-10">
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title=""
+                                                    data-original-title="facebook"
+                                                    data-abc="true">
+                                                    <i class="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title=""
+                                                    data-original-title="twitter"
+                                                    data-abc="true">
+                                                    <i class="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#!"
+                                                    data-toggle="tooltip"
+                                                    data-placement="bottom"
+                                                    title=""
+                                                    data-original-title="instagram"
+                                                    data-abc="true">
+                                                    <i
+                                                        class="mdi mdi-instagram feather icon-instagram instagram"
+                                                        aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="web-scan d-flex align-items-center justify-content-center">
+                <div class="container profile">
+                    <div class="row qr-area">
+                        <div class="col-xl-6 d-flex justify-content-center">
+                            <div class="scan-rules d-flex align-items-center justify-content-center">
+                                <ul class="justify-content-center">
+                                    <li>
+                                        Open Our App In Your Phone
+                                    </li>
+
+                                    <li>
+                                        Goto Menu Or Sattings And Select IPTV WEB
+                                    </li>
+
+                                    <li>Point Your Phone To The Screen To Capture The Code</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xl-6 d-flex align-items-center justify-content-center text-center">
+                            <img src="img/qr.png" class="img-fluid">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div
+                class="modal fade edit-profile"
+                id="exampleModal2"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Update Your Information</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="First name">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Last name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="exampleFormControlFile1">Change Your Profile Picture</label>
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Password">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Confirm Password">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-red" href="#">Save & Change
+                                <i class="fas fa-long-arrow-alt-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        <footer class="bg-blue py-50">
+            <div class="container">
+                <div class="footer-area border-bottom pb-20">
+                    <div class="row">
+                        <div class="col-lg-6 col-xl-4">
+                            <div class="footer-content white-color">
+                                <img src="img/logo.png" alt="Footer Logo">
+                                <p class="font-roboto pt-25">Sed ut perspiciatis unde omnis iste natus error sit
+                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+                                    ab illo inventore veritatis</p>
+                                <ul class="footer-social-link white-color d-padding-x-15 pt-30 pt-xl-85">
+                                    <li>
+                                        <a href="#" class="bg-fb">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="bg-twitter">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="bg-pin">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="bg-linkedin">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="footer-widget">
+                                <h3 class="font-24 font-medium white-color pb-20">More Host XY</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#">About Us</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" data-toggle="modal" data-target="#exampleModal-1">Queries</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-4">
+                            <div class="footer-widget">
+                                <h3 class="font-24 font-medium white-color pb-20">Download Host XY Apps</h3>
+                                <ul>
+                                    <li>
+                                        <a href="#"><img src="img/app.png" alt="Download App"></a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="img/google-play.png" alt="Download App"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="footer-bottom red-gr pt-20">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="font-roboto d-block white-color text-center text-md-left">Copyright © 2020 Host xy - All rights reserved.</span>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-menu text-center text-md-right">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Terms of Service</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Site Map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- -----query modal------ -->
+        <div
+            class="modal fade query-modal"
+            id="exampleModal-1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Your Query</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="4"
+                                    placeholder="Your Queries/ Movie Request"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <a class="btn btn-red" href="#">Submit
+                            <i class="fas fa-long-arrow-alt-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="contentBox">
+                <div class="imgbx">
+                    <img src="img/logo.png">
+                </div>
+                <div class="contant">
+                    <div>
+                        <h2>Host XY</h2>
+                        <p style="margin-bottom: 0rem!important;">Flix Application Movies App / Tv Seris / Live Channel - Demo app</p>
+
+                    </div>
+                </div>
+                <div class="all-pack-dtls" style="padding-right: 5px;">
+                    <div class="all-offers">
+                        <a href="catagory.html">
+                            Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Scroll to top-->
+        <a href="#" class="scrollToTop">
+            <span class="fas fa-angle-up"></span>
+        </a>
+
+        <a href="index.html" class="back-home-bottom">
+            <i class="fas fa-home"></i>
+        </a>
+
+        <!-- jquery JS -->
+        <script src="js/plugin/jquery-3.5.0.min.js"></script>
+        <!-- <script src="assets/vendors/js/jquery.touchSwipe.min.js"></script> -->
+        <!-- swiper JS -->
+        <script src="js/plugin/swiper-bundle.min.js"></script>
+        <!-- isotope JS -->
+        <script src="js/plugin/isotope.pkgd.min.js"></script>
+        <!-- mmenu-light JS -->
+        <script src="js/plugin/mmenu-light.js"></script>
+        <!-- flickity JS -->
+        <script src="js/plugin/flickity.pkgd.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!-- simplebar JS -->
+        <script src="js/plugin/simplebar.min.js"></script>
+        <script src="js/plugin/popper.min.js"></script>
+        <script src="js/plugin/bootstrap.min.js"></script>
+        <script src="js/glider.min.js"></script>
+
+        <!-- script JS -->
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

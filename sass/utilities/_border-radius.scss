@@ -1,0 +1,7 @@
+.radius-5{
+  @include radius($size: 5px);
+}
+
+.radius-10{
+  @include radius($size: 10px);
+}

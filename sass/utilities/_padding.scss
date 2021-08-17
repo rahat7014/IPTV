@@ -1,0 +1,61 @@
+/*-- - Padding -------------------------------------------*/ 
+// // Padding Top
+@include padding-class(pt, 0);
+@include padding-class(pt, 10);
+@include padding-class(pt, 20);
+@include padding-class(pt, 25);
+@include padding-class(pt, 30);
+@include padding-class(pt, 40);
+@include padding-class(pt, 50);
+@include padding-class(pt, 60);
+// @include padding(pt, 15);
+// @include padding(pt, 20);
+
+// // Padding Bottom
+@include padding-class(pb, 0);
+@include padding-class(pb, 10);
+@include padding-class(pb, 20);
+@include padding-class(pb, 40);
+@include padding-class(pb, 70);
+// @include padding(pb, 10);
+// @include padding(pb, 15);
+// @include padding(pb, 20);
+
+// // Padding Left
+// @include padding(pl, 0);
+// @include padding(pl, 10);
+// @include padding(pl, 15);
+// @include padding(pl, 20);
+@include padding-class(pl, 25);
+
+// // Padding Right
+// @include padding(pr, 0);
+// @include padding(pr, 10);
+// @include padding(pr, 15);
+// @include padding(pr, 20);
+
+// // Padding Left-Right
+// @include padding(px, 0);
+// @include padding(px, 10);
+// @include padding(px, 15);
+// @include padding(px, 20);
+
+// // Padding Top-Bottom
+// @include padding(py, 0);
+@include padding-class(py, 15);
+@include padding-class(py, 25);
+@include padding-class(py, 40);
+@include padding-class(py, 50);
+// @include padding(py, 15);
+// @include padding(py, 20);
+
+@include padding-rs(pt, md, 0);
+@include padding-rs(pt, xl, 85);
+@include padding-rs(pt, lg, 150);
+@include padding-rs(py, lg, 100);
+
+.d-padding-x-15{
+  li+li {
+    padding-left: 15px;
+  }
+}

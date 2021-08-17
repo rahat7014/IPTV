@@ -1,0 +1,38 @@
+/*--
+    - Font Family
+-----------------------------------------*/
+.font-barlow {
+  font-family: $barlow;
+}
+.font-roboto{
+  font-family: $roboto;
+}
+
+/*--
+    - Font Weight
+-----------------------------------------*/
+.font-light {
+  font-weight: 400;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semi-bold {
+  font-weight: 600;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+/*--
+    - Font Size
+-----------------------------------------*/
+@include font(24);
+@include font(30);
+@include font(40);
+@include font(45);
+@include font(70, lg);
+@include font(110, lg);

@@ -1,0 +1,5 @@
+// Social Link Horizantal
+@include social(footer-social-link, $color: $white, $m-value: 0, $width: 44px, $radius: 4px);
+
+// Social LInk BG
+@include social(social-link-bg, $fs: 25px, $color: #222222, $width: 54px, $bg: $white, $radius: 50%, $m-value: 30);

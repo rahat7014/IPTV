@@ -1,0 +1,31 @@
+/** -----------------
+   Border
+--------------------- **/ 
+.border {
+   @include border($color: $red);
+}
+
+.border-top{
+   @include border(top);
+}
+
+.border-bottom{
+   @include border(bottom, $color: #747474);
+}
+
+.border{
+   @include border($color: $red);
+}
+
+// Border Class
+@include border-class(right); 
+
+// Responsive Border Class
+@include border-rs(lg, right);
+
+// Border Width 
+.border-width{
+   @include border(width, 5px); 
+}
+
+@include devide(devide-x, $color: $white);
